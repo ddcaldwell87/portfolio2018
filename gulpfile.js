@@ -20,9 +20,9 @@ gulp.task('serve', function () {
     gulp.watch("*.html").on("change", reload);
 });
 
-// Compiles SASS files from /sass into /css
+// Compiles SCSS files from /scss into /css
 gulp.task('sass', function() {
-    return gulp.src('sass/main.sass')
+    return gulp.src('scss/main.scss')
       .pipe(sass())     
       .pipe(gulp.dest('css'))
       .pipe(browserSync.reload({
@@ -45,7 +45,7 @@ gulp.task('minify-js', function() {
 
   //Runs all appropriate tasks and watches for changes. 
 gulp.task('dev', ['serve', 'sass', 'minify-js'], function() {
-    gulp.watch('sass/*.sass', ['sass']);
+    gulp.watch('scss/*.scss', ['sass']);
     gulp.watch('*.html');
     gulp.watch('js/*.js', ['minify-js']);
     gulp.watch('*.html', reload);
