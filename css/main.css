@@ -19,12 +19,11 @@ body {
 .mobile-nav-header {
   margin-left: auto;
   padding-left: 30px; }
-
-h1 {
-  text-transform: uppercase;
-  line-height: 4vh;
-  letter-spacing: 1px;
-  color: #8B6B04; }
+  .mobile-nav-header h1 {
+    text-transform: uppercase;
+    line-height: 4vh;
+    letter-spacing: 1px;
+    color: #8B6B04; }
 
 .mobile-nav-right {
   margin-left: auto; }
@@ -33,7 +32,8 @@ h1 {
   background: transparent;
   border: none;
   cursor: pointer;
-  outline: none; }
+  outline: none;
+  margin-top: -4px; }
   .hamburger .bar1,
   .hamburger .bar2,
   .hamburger .bar3 {
@@ -41,6 +41,10 @@ h1 {
     height: 5px;
     background-color: #333;
     margin: 5px 0; }
+  .hamburger .bar1.active,
+  .hamburger .bar2.active,
+  .hamburger .bar3.active {
+    background-color: #8B2E04; }
 
 .mobile-slidein-nav {
   border-top: 1px solid black; }
@@ -53,11 +57,12 @@ h1 {
   box-sizing: border-box; }
   .mobile-links a {
     font-size: 48px;
+    letter-spacing: 1px;
     text-transform: uppercase;
     padding-top: 6vh;
     padding-bottom: 6vh;
-    padding-left: 20%;
-    padding-right: 20%;
+    padding-left: 10%;
+    padding-right: 10%;
     color: #8B6B04; }
 
 .mobile-links:nth-last-child(1) {

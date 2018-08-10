@@ -11,13 +11,12 @@ body {
 .mobile-nav-header {
     margin-left: auto;
     padding-left: 30px;
-}
-
-h1 {
-    text-transform: uppercase;
-    line-height: 4vh;
-    letter-spacing: 1px;
-    color: $color-secondary-1-0;
+    h1 {
+        text-transform: uppercase;
+        line-height: 4vh;
+        letter-spacing: 1px;
+        color: $color-secondary-1-0;
+    }
 }
 
 .mobile-nav-right {
@@ -29,6 +28,7 @@ h1 {
     border: none;
     cursor: pointer;
     outline: none;
+    margin-top: -4px;
     .bar1,
     .bar2,
     .bar3 {
@@ -36,6 +36,11 @@ h1 {
         height: 5px;
         background-color: #333;
         margin: 5px 0;
+    }
+    .bar1.active,
+    .bar2.active,
+    .bar3.active {
+        background-color: $color-secondary-2-0;
     }
 }
 
@@ -51,11 +56,12 @@ h1 {
     box-sizing: border-box;
     a {
         font-size: 48px;
+        letter-spacing: 1px;
         text-transform: uppercase;
         padding-top: 6vh;
         padding-bottom: 6vh;
-        padding-left: 20%;
-        padding-right: 20%;
+        padding-left: 10%;
+        padding-right: 10%;
         color: $color-secondary-1-0;
     }
 }
