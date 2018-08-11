@@ -36,4 +36,9 @@ jQuery(document).ready(function ($) {
         $("body").toggleClass("mobile-nav-background-color");
     });
 
+    $(".mobile-links").click(function(){
+        $(".mobile-nav").removeClass("mobile-nav-active");
+        $("body").removeClass("mobile-nav-background-color");
+    });
+
 });

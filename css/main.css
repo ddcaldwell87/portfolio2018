@@ -83,6 +83,9 @@ Body Section
 .mobile-slidein-nav.mobile-nav-active {
   display: block; }
 
+#banner-img {
+  height: 40vh; }
+
 /* ------------------------------
 Portfolio Section
 --------------------------------*/
