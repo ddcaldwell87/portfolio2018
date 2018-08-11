@@ -1,7 +1,3 @@
-body {
-    background-color: $color-primary-4;
-}
-
 .navbar-container {
     display: flex;
     padding: 16px;
@@ -15,6 +11,12 @@ body {
         text-transform: uppercase;
         line-height: 4vh;
         letter-spacing: 1px;
+        color: #333;
+    }
+}
+
+.mobile-nav-header{
+    h1.mobile-nav-active {
         color: $color-secondary-1-0;
     }
 }
@@ -37,19 +39,19 @@ body {
         background-color: #333;
         margin: 5px 0;
     }
-    .bar1.active,
-    .bar2.active,
-    .bar3.active {
+    .bar1.mobile-nav-active,
+    .bar2.mobile-nav-active,
+    .bar3.mobile-nav-active {
         background-color: $color-secondary-2-0;
     }
 }
 
 .mobile-slidein-nav {
-    border-top: 1px solid black;
+    border-top: 1px solid $color-secondary-2-0;
 }
 
 .mobile-links {
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid $color-secondary-2-0;
     padding-top: 6vh;
     padding-bottom: 6vh;
     text-align: center;
@@ -72,8 +74,16 @@ body {
 
 #mobile-nav-social-icons {
     padding: 0;
-    margin: 6vh 0 0 0;
+    margin: 6vh 0;
     a {
         padding: 2vh 10%;
     }
+}
+
+.mobile-slidein-nav {
+    display: none;
+}
+
+.mobile-slidein-nav.mobile-nav-active {
+    display: block;
 }
