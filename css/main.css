@@ -50,7 +50,11 @@ Body Section
     background-color: #8B2E04; }
 
 .mobile-slidein-nav {
-  border-top: 1px solid #8B2E04; }
+  border-top: 1px solid #8B2E04;
+  background-color: #01192F;
+  width: 100%;
+  position: absolute;
+  z-index: 1; }
 
 .mobile-links {
   border-bottom: 1px solid #8B2E04;

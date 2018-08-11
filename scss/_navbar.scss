@@ -48,6 +48,10 @@
 
 .mobile-slidein-nav {
     border-top: 1px solid $color-secondary-2-0;
+    background-color: $color-primary-4;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
 }
 
 .mobile-links {
