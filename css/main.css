@@ -16,6 +16,12 @@ Body Section
 .container {
   width: 100%; }
 
+.titles {
+  margin-left: 5%;
+  margin-bottom: 1%;
+  letter-spacing: 1px;
+  text-transform: uppercase; }
+
 .navbar-container {
   display: flex;
   padding: 16px;
@@ -101,11 +107,6 @@ Portfolio Section
 --------------------------------*/
 .portfolio-container {
   margin-top: 10%; }
-  .portfolio-container h1 {
-    margin-left: 3%;
-    margin-bottom: 1%;
-    letter-spacing: 1px;
-    text-transform: uppercase; }
 
 /****************************
  About Section
@@ -122,4 +123,24 @@ Portfolio Section
   margin-bottom: 10%; }
 
 /* CSS code for the Contact section. */
+form {
+  display: block;
+  width: 90%;
+  margin: auto;
+  margin-bottom: 10%; }
+
+input, textarea {
+  border: 1px solid black;
+  padding: 2% 3%;
+  width: 90%;
+  margin-bottom: 2%;
+  font-size: 1.1em; }
+
+.contact-btn {
+  background: #09345A;
+  padding: 2% 3%;
+  color: #8B6B04;
+  font-size: 1.1em;
+  border: none; }
+
 /* CSS code for the Footer section. */
