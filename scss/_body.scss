@@ -3,5 +3,11 @@ Body Section
 ****************************/
 
 .mobile-nav-background-color {
+    height: 100%;
+    overflow: hidden;
     background-color: $color-primary-4;
+}
+
+.container {
+    width: 100%;
 }
